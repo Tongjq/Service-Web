@@ -53,12 +53,13 @@
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
     <Compile Include="Class.cs" />
+    <Compile Include="ClassService.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="DTO\ClassDTO.cs" />
     <Compile Include="DTO\MinZuDTO.cs" />
     <Compile Include="DTO\StudentDTO.cs" />
     <Compile Include="EntityConfig\ClassConfig.cs" />
-    <Compile Include="EntityConfig\MinZuCOnfig.cs" />
+    <Compile Include="EntityConfig\MinZuConfig.cs" />
     <Compile Include="EntityConfig\StudentConfig.cs" />
     <Compile Include="MinZu.cs" />
     <Compile Include="MinZuService.cs" />

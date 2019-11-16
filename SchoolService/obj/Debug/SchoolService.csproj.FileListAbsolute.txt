@@ -1,0 +1,11 @@
+D:\Code\Service+WebUI\SchoolService\bin\Debug\SchoolService.dll.config
+D:\Code\Service+WebUI\SchoolService\bin\Debug\SchoolService.dll
+D:\Code\Service+WebUI\SchoolService\bin\Debug\SchoolService.pdb
+D:\Code\Service+WebUI\SchoolService\bin\Debug\EntityFramework.dll
+D:\Code\Service+WebUI\SchoolService\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\Service+WebUI\SchoolService\bin\Debug\EntityFramework.xml
+D:\Code\Service+WebUI\SchoolService\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\Service+WebUI\SchoolService\obj\Debug\SchoolService.csprojAssemblyReference.cache
+D:\Code\Service+WebUI\SchoolService\obj\Debug\SchoolService.csproj.CopyComplete
+D:\Code\Service+WebUI\SchoolService\obj\Debug\SchoolService.dll
+D:\Code\Service+WebUI\SchoolService\obj\Debug\SchoolService.pdb

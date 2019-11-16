@@ -44,6 +44,29 @@ namespace SchoolService
             }
         }
 
+        public IEnumerable<StudentDTO> GetAll()
+        {
+            List<StudentDTO> list = new List<StudentDTO>();
+            using (DataContext ctx = new DataContext())
+            {
+                var students = ctx.Students.AsNoTracking().Include(s => s.Class).Include(s => s.MinZu);
+                foreach (var s in students)
+                {
+                    StudentDTO dto = new StudentDTO();
+                    dto.Id = s.Id;
+                    dto.Name = s.Name;
+                    dto.Age = s.Age;
+                    dto.ClassId = s.ClassId;
+                    dto.ClassName = s.Class.Name;
+                    dto.MinZuId = s.MinZuId;
+                    dto.MinZuName = s.MinZu.Name;
+                    list.Add(dto);
+
+                }
+            }
+            return list;
+        }
+
         public StudentDTO GetById(long id)
         {
             using (DataContext ctx = new DataContext())
@@ -89,6 +112,7 @@ namespace SchoolService
                     dto.MinZuId = student.MinZuId;
                     dto.MinZuName = student.MinZu.Name;
                     dto.Name = student.Name;
+                    dtoList.Add(dto);
                 }
 
                 return dtoList;

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<SchoolService.DTO.StudentDTO>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>班级学生列表</title>
+</head>
+<body>
+    <a href="~/Home/AddNew">新增</a>
+    <div> 
+        <table>
+            <thead>
+                <tr><td>姓名</td><td>年龄</td><td>民族</td><td>删除</td></tr>
+            </thead>
+            <tbody>
+                @foreach (var s in Model)
+                {
+                    <tr><td>@s.Name</td><td>@s.Age</td><td>@s.MinZuName</td><td>@s.ClassName</td>
+                <td><a href="~/Home/Delete?id=@s.Id" onclick="return confirm('真的要删除@(s.Name)吗?')">删除</a></td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

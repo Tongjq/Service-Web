@@ -1,0 +1,24 @@
+﻿@model SchoolWeb.ViewModel.SelectListViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>新增学生</title>
+</head>
+<body>
+    <div>
+        <form action="~/Home/AddNew" method="post">
+            姓名：<input type="text" name="name" /><br />
+            年龄：<input type="text" name="age" /><br />
+            班级：@Html.DropDownList("classId", Model.Classes) <br />
+            名族：@Html.DropDownList("minZuId", Model.MinZus) <br />
+            <input type="submit" value="保存" />
+        </form>
+    </div>
+</body>
+</html>
