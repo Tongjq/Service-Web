@@ -11,6 +11,7 @@ namespace SchoolWeb.Controllers
 {
     public class HomeController : Controller
     {
+        // 测试提交
         // GET: Home
         public ActionResult Index()
         {
